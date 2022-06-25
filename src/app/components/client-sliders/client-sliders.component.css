@@ -1,0 +1,99 @@
+@font-face {
+  font-family: BigJohn;
+  src: url(/assets/fonts/big-john.otf);
+}
+
+.client-slider-wrapper {
+  background-color: #2f3131;
+}
+
+.client-header-text {
+  padding: 5em;
+}
+.carousel-case-study-wrapper {
+  padding: 0 12em;
+}
+
+.carousel-case-study-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.carousel-case-study-item-image {
+  width: 100%;
+  height: 100%;
+  transform: translateY(0%);
+  transition: all 0.5s ease;
+}
+
+.carousel-case-study-item-content-container {
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  position: absolute;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0%);
+  transition: all 1s ease;
+  overflow: hidden !important;
+  /* background: rgba(0, 0, 0, 0.3); */
+}
+.carousel-case-study-item-content {
+  padding: 5%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateY(100%);
+
+  color: white;
+  font-family: BigJohn;
+}
+.carousel-case-study-item-content h2,
+.carousel-case-study-item-content p {
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.carousel-case-study-item-image:hover {
+  transform: translateY(-3%);
+}
+
+.carousel-case-study-item-content-container:hover
+  .carousel-case-study-item-content {
+  transform: translateY(0%);
+}
+
+.carousel-case-study-item-content img {
+  max-width: 100%;
+}
+
+.carousel-case-study-item-overlay-image {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  transform: translateY(0%);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.carousel-case-study-item-content-container:hover
+  .carousel-case-study-item-overlay-image {
+  transform: translateY(-150%);
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-case-study-wrapper {
+    padding: 0;
+  }
+}

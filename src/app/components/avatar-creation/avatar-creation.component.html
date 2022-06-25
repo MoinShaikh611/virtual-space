@@ -1,0 +1,75 @@
+<div class="avatar-creation-costume-wrapper">
+  <!-- <div class="avatar-style-list-container">
+    <div class="avatar-style-list-container">
+      <div class="avatar-list-item">
+        <p>skin tone</p>
+
+        <span class="avatar-list-item-selected-arrow"
+          ><img
+            src="../../../assets/images/avatar-creation/selected-arrow.png"
+            alt=""
+        /></span>
+      </div>
+      <div class="avatar-list-item">
+        <p>hair style</p>
+
+        <span class="avatar-list-item-selected-arrow"
+          ><img
+            src="../../../assets/images/avatar-creation/selected-arrow.png"
+            alt=""
+        /></span>
+      </div>
+      <div class="avatar-list-item">
+        <p>jackets</p>
+
+        <span class="avatar-list-item-selected-arrow"
+          ><img
+            src="../../../assets/images/avatar-creation/selected-arrow.png"
+            alt=""
+        /></span>
+      </div>
+      <div class="avatar-list-item">
+        <p>bottoms</p>
+
+        <span class="avatar-list-item-selected-arrow"
+          ><img
+            src="../../../assets/images/avatar-creation/selected-arrow.png"
+            alt=""
+        /></span>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="avatar-container">
+    <div class="avatar-container-image">
+      <!-- <img
+        src="../../../assets/images/avatar-creation/avatar.png"
+        alt="avatar"
+      /> -->
+      <ng-container *ngIf="isMobile == true">
+        <video
+          class="landing-video-bg"
+          src="../../../assets/videos/avatar-creation-mobile.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+          #homeVideo
+        ></video>
+      </ng-container>
+      <ng-container *ngIf="isMobile == false">
+        <video
+          class="landing-video-bg"
+          src="../../../assets/videos/avatar-creation.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+          #homeVideo
+        ></video>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="avatar-creation-costume-carousel"></div> -->

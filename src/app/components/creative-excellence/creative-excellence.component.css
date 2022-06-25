@@ -1,0 +1,131 @@
+.creative-excellence-wrapper {
+  background-color: #2f3131;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5em 0 0 5em;
+}
+.demo-btn-img-wrapper {
+  width: 200px;
+  border-radius: 6em;
+  padding: 1em 2em;
+  background: rgb(133, 66, 125);
+  background: linear-gradient(
+    90deg,
+    rgba(133, 66, 125, 1) 0%,
+    rgba(106, 66, 128, 1) 50%,
+    rgba(81, 67, 130, 1) 100%
+  );
+
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-200px);
+}
+.demo-btn-img-wrapper.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateY(0px);
+}
+
+.creative-excellence-image-container {
+  position: relative;
+  width: 1000px;
+}
+
+.creative-excellence-content-p {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+.creative-excellence-content-p.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+/* .lobby {
+  position: absolute;
+  top: 0;
+}*/
+.bubble-1 {
+  top: 60%;
+  left: 0%;
+  position: absolute;
+  width: 3%;
+}
+.bubble-2 {
+  top: 25%;
+  position: absolute;
+  width: 7%;
+  left: 15%;
+}
+.bubble-3 {
+  top: 35%;
+  position: absolute;
+  width: 5%;
+  right: 5%;
+}
+.bubble-4 {
+  top: 10%;
+  position: absolute;
+  width: 4%;
+  right: 30%;
+}
+.cloud-1 {
+  width: 30%;
+  position: absolute;
+  top: 35%;
+}
+.cloud-2 {
+  width: 15%;
+  position: absolute;
+  top: 0%;
+  left: 30%;
+}
+.cloud-3 {
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.creative-excellence-content-container {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8em;
+  flex-direction: column;
+  padding: 2em 0;
+}
+.an-1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.right-arrow-landing {
+  width: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .creative-excellence-wrapper {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .creative-excellence-content-container {
+    width: 90%;
+    gap: 4em;
+  }
+  .demo-btn-img-wrapper {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 768px) {
+  .demo-btn-img-wrapper {
+    width: 150px;
+  }
+  .creative-excellence-content-container {
+    gap: 2em;
+  }
+}

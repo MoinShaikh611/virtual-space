@@ -1,0 +1,324 @@
+.possibilities-wrapper {
+  background-color: #2f3131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.possibility-header-h1 {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+.possibility-header-h1.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+.possibility-header-image {
+  width: 200px;
+  margin-left: 12em;
+  opacity: 0;
+  transform: translateX(500px);
+}
+
+.possibility-header-image.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+
+.possibility-virtual-parties-header-h1 {
+  opacity: 0;
+  transform: translateX(500px);
+}
+.possibility-virtual-parties-header-h1.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+
+.possibility-virtual-parties-header-p {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+.possibility-virtual-parties-header-p.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+
+.retail-spaces-bg-content-h1 {
+  opacity: 0;
+  transform: translateX(500px);
+}
+.retail-spaces-bg-content-h1.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+.retail-spaces-bg-content-p {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+
+.retail-spaces-bg-content-p.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+
+.experience-center-bg-content-h1 {
+  opacity: 0;
+  transform: translateX(500px);
+}
+.experience-center-bg-content-p {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+.experience-center-bg-content-h1.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+.experience-center-bg-content-p.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+
+.possibility-virtual-parties-header p {
+  width: 50%;
+  text-align: center;
+}
+.possibility-virtual-parties-gif {
+  width: 40vw;
+  margin: 2em auto;
+}
+.retail-spaces-image-bg {
+  position: relative;
+  padding: 2em 6em;
+}
+.retail-spaces-bg-content {
+  width: 50%;
+  position: absolute;
+  top: 35%;
+}
+
+.avatar-creation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.avatar-creation-bg-image {
+  width: 100%;
+  margin-top: 2em;
+}
+.avatar-creation-content {
+  max-width: 812px;
+  margin: 0 2em;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.avatar-creation-content p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.avatar-creation-header-h1 {
+  opacity: 0;
+
+  transform: translateX(500px);
+}
+.avatar-creation-header-h1.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+
+.avatar-creation-content.is-show {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+
+.brand-zone-content-h1 {
+  opacity: 0;
+  transform: translateX(-300px);
+}
+.brand-zone-content-p {
+  opacity: 0;
+  transform: translateY(-200px);
+}
+.brand-zone-content-image {
+  opacity: 0;
+  transform: translateX(300px);
+}
+
+.brand-zone-content-h1.is-show {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 1s ease;
+}
+.brand-zone-content-p.is-show {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1s ease;
+}
+.brand-zone-content-image.is-show {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 1s ease;
+}
+
+.possibility-header {
+  margin-top: 3em;
+}
+.possibility-virtual-parties-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+.retail-spaces-bg-content {
+  margin-left: 5em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.experience-center-wrapper {
+  position: relative;
+  height: 700px;
+}
+
+.experience-center-wrapper .experience-center-joystick-image-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.experience-center-wrapper .experience-center-joystick-image {
+  position: absolute;
+  top: 55%;
+  left: 65%;
+}
+
+.experience-center-bg-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.brand-zone-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2em;
+  padding: 5em 10em;
+}
+.brand-zone-content-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.brand-zone-image-container {
+  width: 50%;
+}
+.video-on-scroll {
+  width: 1000px;
+  height: 1000px;
+  background-color: aliceblue;
+}
+.video-on-scroll video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .possibility-header-image {
+    width: 150px;
+    margin-left: 6em;
+  }
+  .possibility-virtual-parties-header p {
+    width: 80%;
+  }
+  .retail-spaces-bg-content {
+    width: 60%;
+    margin-left: 1em;
+    gap: 0.2em;
+    top: 25%;
+  }
+  .retail-spaces-image-bg {
+    padding: 1em;
+  }
+  .experience-center-wrapper {
+    height: 350px;
+  }
+  .experience-center-bg-content {
+    width: 60%;
+    gap: 0.5em;
+  }
+  .experience-center-joystick-image-bg {
+    width: 75%;
+  }
+  .experience-center-wrapper .experience-center-joystick-image {
+    width: 20%;
+    top: 60%;
+    left: 75%;
+  }
+  .brand-zone-wrapper {
+    padding: 5em 1em;
+    flex-wrap: wrap;
+  }
+  .brand-zone-content-container {
+    width: 100%;
+  }
+  .brand-zone-image-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 768px) {
+  .experience-center-bg-content-p {
+    font-size: 0.9em;
+  }
+  .retail-spaces-image-bg {
+    padding: 1em 1em;
+  }
+  .retail-spaces-bg-content {
+    margin-left: 2em;
+    gap: 2em;
+  }
+  .experience-center-joystick-image-bg {
+    width: 50%;
+  }
+  .experience-center-joystick-image {
+    width: 20%;
+  }
+  .experience-center-bg-content {
+    gap: 1em;
+  }
+  .experience-center-wrapper {
+    height: 400px;
+  }
+  .brand-zone-wrapper {
+    padding: 5em 2em;
+  }
+}

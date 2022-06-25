@@ -1,0 +1,29 @@
+<div class="client-slider-wrapper" #clientWrapper>
+  <div class="client-header-text">
+    <h1 #clientHeader class="explore-letter">EXPLORE THE METAVERSE</h1>
+  </div>
+  <div class="carousel-case-study-wrapper">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of slidesStore">
+        <ng-template carouselSlide>
+          <a [href]="slide.caseStudyLink" target="_blank">
+            <div class="carousel-case-study-item">
+              <div class="carousel-case-study-item-image">
+                <img [src]="slide.caseStudy" alt="any" />
+                <div class="carousel-case-study-item-content-container">
+                  <div class="carousel-case-study-item-overlay-image">
+                    <img [src]="slide.overlayImage" alt="any" />
+                  </div>
+                  <div class="carousel-case-study-item-content">
+                    <h2>{{ slide.title }}</h2>
+                    <p>{{ slide.tvShow }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</div>

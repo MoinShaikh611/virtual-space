@@ -1,0 +1,77 @@
+.avatar-creation-costume-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.avatar-creation-costume-wrapper.is-show {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.avatar-list-item {
+  width: 200px;
+  height: 40px;
+  border: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.avatar-list-item.active {
+  background-color: gray;
+  width: 220px;
+}
+
+span.avatar-list-item-selected-arrow {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.avatar-list-item.active span.avatar-list-item-selected-arrow {
+  opacity: 1;
+}
+
+.avatar-list-item::before {
+  content: "";
+  background-image: url(../../../assets/images/avatar-creation/label-diamond.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 4px;
+  left: -14px;
+  width: 30px;
+  height: 30px;
+}
+
+.avatar-style-list-container {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+.avatar-style-list-container p {
+  font-size: 1em !important;
+}
+
+.avatar-creation-costume-carousel {
+  border: 2px solid white;
+}
+.avatar-container-image video {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .avatar-creation-costume-wrapper {
+    flex-direction: column;
+  }
+}

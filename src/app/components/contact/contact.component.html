@@ -1,0 +1,128 @@
+<div class="contact-wrapper">
+  <div class="contact-header-container">
+    <div class="contact-header">
+      <h1 class="contact-header-h1">CONTACT</h1>
+      <div class="contact-header-image">
+        <img src="../../../assets/images/possibilities-v-verse.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="contact-form-wrapper">
+    <div class="form-container">
+      <div class="col">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="label">
+              <p>Name</p>
+            </div>
+            <input type="text" formControlName="name" [(ngModel)]="userName" />
+            <p *ngIf="isNameInValid">Name is Required</p>
+          </div>
+
+          <div class="row">
+            <div class="label">
+              <p>Email</p>
+            </div>
+            <input
+              type="text"
+              formControlName="email"
+              [(ngModel)]="userEmail"
+            />
+            <p *ngIf="isEmailValid">Email is Required</p>
+          </div>
+          <div class="row">
+            <div class="label">
+              <p>Phone</p>
+            </div>
+            <!-- <input
+              #phone
+              ng2TelInput
+              type="phone"
+              formControlName="phone"
+
+            /> -->
+            <!-- [selectedCountryISO]="CountryISO.India" -->
+            <ngx-intl-tel-input
+              [cssClass]="'custom'"
+              [enableAutoCountrySelect]="false"
+              [enablePlaceholder]="true"
+              [searchCountryFlag]="true"
+              [selectFirstCountry]="false"
+              [maxLength]="10"
+              [phoneValidation]="false"
+              [selectedCountryISO]="CountryISO.India"
+              name="phone"
+              formControlName="phone"
+              [(ngModel)]="userPhone"
+            ></ngx-intl-tel-input>
+            <p *ngIf="isPhoneValid">Phone is Required</p>
+          </div>
+
+          <div class="row">
+            <div class="label">
+              <p>Message</p>
+            </div>
+            <input
+              type="text"
+              formControlName="message"
+              [(ngModel)]="userMessage"
+            />
+            <p *ngIf="isMessageValid">Message is Required</p>
+            <p *ngIf="formSubmittedSuccessfully">
+              Form Submitted Successfully.
+            </p>
+          </div>
+          <div class="row">
+            <div class="submit-btn-wrapper">
+              <button type="submit">
+                <p>Submit</p>
+                <img src="../../../assets/images/right-arrow.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col">
+        <div class="row">
+          <h4>ADDRESS</h4>
+          <p>
+            405, Corporate Annexe Sonawala Rd Goregaon (East), Mumbai 400063
+          </p>
+        </div>
+        <div class="row">
+          <h4>PHONE</h4>
+          <p>+91-9930677169</p>
+          <p>+91-7506292169</p>
+        </div>
+        <div class="row">
+          <h4>WRITE TO US</h4>
+          <p>mumbai@inkincaps.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="horizontal-line"></div>
+    <div class="contact-brands-wrapper images-1">
+      <a href="https://www.iiclab.com" target="_blank">
+        <img src="../../../assets/images/brands/iic-logo.png" alt="" />
+      </a>
+      <a href="https://squarepixelstudios.net/" target="_blank">
+        <img src="../../../assets/images/brands/square-pixel-logo.png" alt="" />
+      </a>
+    </div>
+    <div class="contact-brands-wrapper images-2">
+      <a href="https://global.vtour.tv/home" target="_blank">
+        <img src="../../../assets/images/brands/vtour-tv-logo.png" alt="" />
+      </a>
+      <a>
+        <img src="../../../assets/images/brands/v-stages-logo.png" alt="" />
+      </a>
+      <a href="https://vretailbeta.vtour.tech/" target="_blank">
+        <img src="../../../assets/images/brands/v-retail-logo.png" alt="" />
+      </a>
+      <a>
+        <img src="../../../assets/images/brands/v-conf-logo.png" alt="" />
+      </a>
+    </div>
+  </div>
+</div>

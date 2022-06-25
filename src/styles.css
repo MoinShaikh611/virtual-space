@@ -1,0 +1,172 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: BigJohn;
+  src: url(/assets/fonts/big-john.otf);
+}
+@font-face {
+  font-family: SlimJoe;
+  src: url(/assets/fonts/slim-joe.otf);
+}
+@font-face {
+  font-family: notoSans;
+  src: url(/assets/fonts/NotoSans-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background: rgb(17, 27, 23);
+  background: linear-gradient(
+    90deg,
+    rgba(17, 27, 23, 1) 0%,
+    rgba(230, 30, 117, 1) 48%,
+    rgba(84, 41, 120, 1) 77%,
+    rgba(17, 27, 23, 1) 100%
+  );
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: BigJohn;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.5em;
+  color: rgb(255, 255, 255, 0.7);
+  font-family: notoSans;
+}
+
+.owl-carousel .owl-item img {
+  border-radius: 16px !important;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  zoom: 2 !important;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  width: 70px !important;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  color: none !important;
+  font-size: 0 !important;
+  margin: 5px;
+  padding: 4px 7px;
+  background: none !important;
+  display: inline-block !important;
+  cursor: pointer !important;
+  border-radius: none !important;
+}
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+.owl-nav {
+  position: relative;
+  padding: 3em 0;
+}
+
+.owl-prev {
+  position: absolute;
+  right: 20%;
+  bottom: 30%;
+}
+
+.owl-next {
+  position: absolute;
+  right: 10%;
+  bottom: 30%;
+}
+.owl-carousel .owl-stage-outer {
+  overflow: inherit !important;
+}
+.iti.iti--allow-dropdown {
+  width: 100%;
+}
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type="text"],
+.iti--allow-dropdown input[type="tel"],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type="text"],
+.iti--separate-dial-code input[type="tel"] {
+  background: no-repeat !important;
+  border: 0 !important;
+  border-bottom: 1px solid white !important;
+  outline: none !important;
+  width: 100% !important;
+  color: white !important;
+  padding: 1em 3em !important;
+  font-size: 15px !important;
+}
+
+.iti input#country-search-box {
+  color: black !important;
+}
+
+.iti__flag-container.open.show {
+  width: 100%;
+}
+.dropdown-menu.country-dropdown.show.ng-star-inserted {
+  width: 100% !important;
+}
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .owl-nav {
+    position: inherit;
+  }
+  .owl-prev {
+    position: absolute;
+    right: 30%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+}
